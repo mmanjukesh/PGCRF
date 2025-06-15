@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "version": "1.0.0",
+  "id": "24fb9a2d-6ed3-4768-9f0f-61c457481eab",
+  "packageName": "com.yourcompany.webapp",
+  "developer": {
+    "name": "Manjukesh",
+    "websiteUrl": "https://mmanjukesh.github.io/PGCRF/",
+    "privacyUrl": "https://mmanjukesh.github.io/PGCRF/",
+    "termsOfUseUrl": "https://mmanjukesh.github.io/PGCRF/"
+  },
+  "name": {
+    "short": "My Web App",
+    "full": "My Web App in Teams"
+  },
+  "description": {
+    "short": "Your GitHub Pages app in Teams",
+    "full": "This app embeds your GitHub Pages-hosted web app as a Teams tab."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "home",
+      "name": "My App",
+      "contentUrl": "https://mmanjukesh.github.io/PGCRF/",
+      "websiteUrl": "https://mmanjukesh.github.io/PGCRF/",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["mmanjukesh.github.io"]
+}

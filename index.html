@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Room Finder App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <header>
+    <img src="./images/logo.png" alt="Logo" class="logo" />
+    <div class="app-title">Providence - Room Finder App</div>
+  </header>
+
+  <div class="floor-buttons">
+    <button >Floor 16</button>
+    <button >Floor 17</button>
+    <button >Floor 18</button>
+    <button >Floor 19</button>
+    <button >Floor 20</button>
+    <button >Floor 21</button>
+    <button >Floor 22</button>
+  </div>
+
+  <main>
+    <div class="room-container">
+      <div class="room-list">
+        <h3>Room Names</h3>
+        <ul id="roomNames"></ul>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="map-container">
+        <div id="leafletMap"></div>
+      </div>
+      <p class="directions-text">Directions</p>
+      <div class="directions-container">
+        <div id="directions"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
